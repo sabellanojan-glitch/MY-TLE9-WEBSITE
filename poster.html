@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<title>Volcanic Eruption Awareness Poster</title>
+
+<style>
+  :root{
+    --bg:#fff9f2;
+    --accent:#c0392b;
+    --muted:#6b6b6b;
+    --panel:#ffffff;
+    --shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  html,body{
+    height:100%;
+    margin:0;
+    font-family:Arial;
+    background: linear-gradient(180deg, #fffefc 0%, #fff3e8 100%);
+    color:#222;
+  }
+
+  .shyra {
+    max-width:1100px;
+    margin:24px auto;
+    background: linear-gradient(180deg, var(panel) 0%, #fffaf7 100%);
+    border-radius:14px;
+    box-shadow: var(--shadow);
+    padding:28px;
+    box-sizing:border-box;
+    border: 6px solid #f3d1ca;
+  }
+
+  header{
+    text-align:center;
+    margin-bottom:6px;
+  }
+  .title{
+    font-family: Oswald;
+    font-size:50px;
+    letter-spacing:1px;
+    color: #9b1f18;
+    margin:0;
+  }
+  .subtitle{
+    font-size:14px;
+    color:var(--muted);
+    margin-top:6px;
+    max-width:860px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .main {
+    display:grid;
+    grid-template-columns: 1fr 420px 1fr;
+    gap:22px;
+    align-items:start;
+    margin-top:18px;
+  }
+
+  .panel {
+    background: linear-gradient(180deg,#fffdfc 0%, #fff6f3 100%);
+    padding:16px;
+    border-radius:10px;
+    border:1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  }
+  .panel h3{
+    font-family:"Oswald";
+    font-size:20px;
+    margin:0 0 10px 0;
+    color: #3b2b26;
+  }
+  .list {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .item {
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+  }
+  .icon {
+    min-width:44px;
+    height:44px;
+    border-radius:8px;
+    background:linear-gradient(180deg,#fff 0%, #fff6f6 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    border:1px solid rgba(0,0,0,0.06);
+  }
+  .item p{
+    margin:0;
+    font-size:14px;
+    color:#222;
+    line-height:1.35;
+  }
+
+  .volcano {
+    width:100%;
+    max-width:460px;
+	height:480px;
+    border-radius:10px;
+    box-shadow:0 6px 12px rgba(0,0,0,0.1);
+  }
+
+  .after {
+    margin-top:18px;
+    display:flex;
+    gap:10px;
+    padding:12px;
+    align-items:flex-start;
+    border-radius:10px;
+    background: linear-gradient(90deg,#fffdfc 0%, #fff6f3 100%);
+    border:1px solid rgba(0,0,0,0.04);
+  }
+  .after .col {
+    flex:1;
+  }
+  .after h4{
+    margin:0 0 8px 0;
+    font-family: "arial";
+    font-size:16px;
+  }
+  .after p{ margin:0; font-size:13px; color:#2f2f2f; line-height:1.35; }
+
+  footer {
+    margin-top:12px;
+    text-align:center;
+    color:var(--muted);
+    font-size:12px;
+  }
+
+  @media (max-width:1020px){
+    .main {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "left right"
+        "center center";
+
+  }
+  @media (max-width:720px){
+    .poster { padding:16px; }
+    .title { font-size:34px; }
+    .main { grid-template-columns: 1fr; gap:14px; }
+    .after { flex-direction:column; }
+  }
+</style>
+</head>
+
+<body>
+  <div class="shyra" role="main" aria-labelledby="poster-title">
+    <header>
+      <h1 id="poster-title" class="title">VOLCANIC ERUPTION</h1>
+      <p class="subtitle">
+        Volcanic eruptions may be subtle or explosive and can produce dangerous lava flows, poisonous gases, and flying rocks and ash.
+        If you live near a volcano active or dormant be prepared to act on short notice.
+      </p>
+    </header>
+
+    <div class="main">
+      
+      <!-- BEFORE column yay -->
+      <aside class="panel">
+        <h3 id="before-title">Before</h3>
+        <div class="list" role="list">
+          <div class="item" role="listitem">
+            <img src="beware.jfif" width="50px" height="50px">
+            <p><strong>Be aware</strong> and be alert for the announcement given by the government. Stay tuned to local official channels.</p>
+          </div>
+
+          <div class="item" role="listitem">
+            <img src="secure.jfif" width="50px" height="50px">
+            <p><strong>Secure items:</strong> Put all machines and animals in a safe area. Secure loose things that ash could blow away.</p>
+          </div>
+
+          <div class="item" role="listitem">
+          <img src="evacuation.jfif" width="50px" height="50px">
+            <p><strong>Evacuation plan:</strong> Prepare an evacuation plan, know how and where you would go if you are told to evacuate.</p>
+          </div>
+
+          <div class="item" role="listitem">
+            <img src="emergencykit.jpg" width="50px" height="60px">
+            <p><strong>Disaster kit:</strong> Assemble a "go bag" with emergency supplies like water, food, flashlight, masks, first-aid, important docs.</p>
+          </div>
+
+          <div class="item" role="listitem">
+            <img src="house.png" width="50px" height="50px">
+            <p><strong>Safety at home:</strong> Check that structural items are safe and that you can move quickly if ordered to evacuate.</p>
+          </div>
+        </div>
+      </aside>
+
+      
+      <div class="volcano-wrap">
+        <img src="volcano.jpg" alt="Volcanic eruption image" class="volcano">
+      </div>
+
+      <!-- DURING column -->
+      <aside class="panel">
+        <h3 id="during-title">During</h3>
+        <div class="list" role="list">
+          <div class="item" role="listitem">
+         <img src="wear.jfif" width="50px" height="50px">
+            <p><strong>Wear protective clothing:</strong> Long-sleeved shirts and pants to reduce skin exposure to ash and debris.</p>
+          </div>
+
+          <div class="item" role="listitem">
+            <img src="mask.jfif" width="50px" height="50px">
+            <p><strong>Respiratory protection:</strong> Wear safety goggles and a mask to avoid breathing in ash.</p>
+          </div>
+
+          <div class="item" role="listitem">
+              <img src="shelter.png" width="50px" height="50px">
+            <p><strong>Shelter inside:</strong> Close all doors and windows to keep ash from entering buildings and switch off ventilation if necessary.</p>
+          </div>
+
+          <div class="item" role="listitem">
+             <img src="order.jpg" width="50px" height="50px">
+            <p><strong>Follow orders:</strong> Follow evacuation orders from authorities immediately. Move to higher ground if advised.</p>
+          </div>
+
+          <div class="item" role="listitem">
+              <img src="avoid.jfif" width="50px" height="50px">
+            <p><strong>Avoid danger:</strong> Do not go near the volcano or river valleys that could carry lahars (mudflows).</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="after">
+      <div class="col">
+        <h4 id="after-title">After: Stay safe & check</h4>
+        <p><strong>At home:</strong> When it is safe to return, check your house, roofs and structures for damage before entering. Use masks during cleaning.</p>
+      </div>
+
+      <div class="col">
+        <h4>Await announcements</h4>
+        <p>Wait for announcements and official clearance from authorities before resuming normal activities as roads, utilities, and services may still be unsafe.</p>
+      </div>
+
+      <div class="col">
+        <h4>Check & help</h4>
+        <p>Before going home, check that family members are safe and that basic services (water, electricity) are safe to use. Help neighbors if you can. If you experience any symptoms like difficulty in breathing or persistent coughing, seek medical help.</p>
+      </div>
+    </section>
+
+    <footer>
+      <small>STAY SAFE AND AWARE</small>
+    </footer>
+  </div>
+</body>
+</html>
