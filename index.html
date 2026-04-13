@@ -3,6 +3,7 @@
 <head> 
 <title>Volcanic Eruption Awareness Poster</title>
 <meta name="google-site-verification" content="N3B4KWsPjxIuLjBWn8xpshY8MzPPTKPtH0eBgyaMJzY" />
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#fff9f2;
@@ -60,7 +61,7 @@
   }
 
   .panel {
-    background: linear-gradient(180deg,#fffdfc 0%, #fff6f3 100%);
+   background: linear-gradient(180deg, var(--panel) 0%, #fffaf7 100%);
     padding:16px;
     border-radius:10px;
     border:1px solid rgba(0,0,0,0.04);
@@ -141,7 +142,7 @@
       grid-template-areas:
         "left right"
         "center center";
-
+  }
   }
   @media (max-width:720px){
     .poster { padding:16px; }
